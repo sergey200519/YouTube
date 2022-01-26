@@ -1,0 +1,117 @@
+:root {
+  --background: white;
+  --font-size: 20px;
+  --color-text: #ffffff;
+  --box-background: #000000;
+}
+
+
+/*reset*/
+*,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/*the basis    -    main*/
+.wrapper {
+  border-radius: 10px;
+  display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.conteiner {
+  padding: 10px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.content {
+  flex:1 1 auto;
+	margin-bottom: 60px;
+}
+h2 {
+  color: var(--color-text);
+  margin: 40px 0 20px 0;
+}
+
+
+/* body */
+body {
+  background: var(--background);
+}
+.main_conteiner {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 100vh;
+}
+.box {
+  --background3: blue;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: var(--box-background, green);
+  width: 50%;
+}
+.box2 {
+  background: var(--background3, green);
+}
+.btn {
+  --width: 100px;
+  margin: auto;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: calc(var(--width) + 100px);
+  height: 30px;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+@media (max-width: 400px;) {
+  :root {
+    --font-size: 16px;
+  }
+}

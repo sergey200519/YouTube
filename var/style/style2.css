@@ -1,0 +1,5 @@
+p {
+  font-size: var(--font-size);
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
