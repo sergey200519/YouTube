@@ -1,0 +1,17 @@
+<shop>
+  <product>
+    <name>apple</name>
+    <image>apple.jpg</image>
+    <price>42</price>
+  </product>
+  <product>
+    <name>pear</name>
+    <image>pear.jpg</image>
+    <price>55</price>
+  </product>
+  <product>
+    <name>orange</name>
+    <image>orange.jpg</image>
+    <price>67</price>
+  </product>
+</shop>
